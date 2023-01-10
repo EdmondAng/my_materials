@@ -21,13 +21,10 @@ ABC Estate Management asked for a predictive model with $R^{2}$ > 0.8 to be deve
 
 ## Conclusion
 
-The objective was achieved: a linear regression model of $R^{2}$ score of 0.9 was developed for ABC Estate Agency. A minimal data cleaning framework was also proposed to maintain the best model result.
+The objective was achieved: a RidgeCV model of $R^{2}$ score of 0.9 was developed for ABC Estate Agency. A minimal data cleaning framework was also proposed to maintain the best model result.
 
 1. Findings:
-    * The baseline linear regression model used on full hdb_train_df gave the best model result
-    * The results of dropping features using Pearson corr coef and ridgecv alpha optimisation supported linear regression as the best model:
-        * The more features dropped by increasing p-value threshold from 0.1 to 0.5, the lower all models' cross-val-scores were. Intuitively, this meant that dropping features was not a good idea. In turn, this suggested that the effectiveness of lassocv (known for feature selection) was limited
-        * Through alpha optimisation efforts, ridgecv.alpha_ was observed to minimise towards 0. This meant that ridgecv tended towards becoming a linear regression model, since alpha == 0 is equivalent to a linear regression model
+    * The RidgeCV model used on full hdb_train_df gave the best model result
 <br>
 2. Areas for future improvement:
     * The dataset can be improved by adding several other factors that are intuitively impactful to HDB resale flat prices, such as:
