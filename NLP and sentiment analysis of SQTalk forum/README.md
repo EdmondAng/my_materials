@@ -3,7 +3,9 @@ Author: Edmond Ang
 
 ## 1. Problem Statement
 
-Every week, the customer service centre of Singapore Airlines (SIA) receives thousands of feedback, compliments and complaints from its customers and the public. As part of SIA's digitalisation effort to reduce manual labour and speed up response time, the SIA management hired me to develop a predictive model to automatically sort incoming enquiries into their top 2 most-frequently-asked topics and others: 
+Every week, the customer service centre of Singapore Airlines (SIA) receives thousands of feedback, questions, compliments and complaints from its customers and the public. As part of SIA's digitalisation effort to reduce manual labour and speed up response time, the SIA management hired me to (1) develop a predictive model to automatically sort incoming messages and into their top 2 most-frequently-asked topics and others, and (2) to identify the top key words from these messages and their sentiments.
+
+SIA's top 2 most-frequently-asked topics and others:
 - KrisFlyer and PPS Club<sup>1</sup> (KF)
 - Lounges, catering and amenity kits (LCA)
 - Others
@@ -22,7 +24,7 @@ Every week, the customer service centre of Singapore Airlines (SIA) receives tho
 
 ## 3. Conclusion
 
-A predictive model with good performance was successfully developed for SIA. The customer service centre can use the model to sort incoming enquiries into (1) KF, (2) LCA, and (3) other categories automatically. The areas of strength for KF and LCA were also identified through sentiment analysis, where SIA can then incorporate into their marketing campaigns. SIA was also advised to continuously monitor the model's performance, and to conduct model re-training when the ROC AUC and f1 scores dip to 0.8 and 0.7 respectively to maintain good predictive performance.
+A predictive model with good performance was successfully developed for SIA. The customer service centre can use the model to sort incoming messages into (1) KF, (2) LCA, and (3) other categories automatically. The areas of strength for KF and LCA were also identified through sentiment analysis, where SIA can then incorporate into their marketing campaigns. SIA was also advised to continuously monitor the model's performance, and to conduct model re-training when the ROC AUC and f1 scores dip to 0.8 and 0.7 respectively to maintain good predictive performance.
 
 1. Findings:
     - The TFIDF-vectorised SVM model performed the best in both weight-average ROC AUC (0.913) and f1-scores (0.802) across all the above models
