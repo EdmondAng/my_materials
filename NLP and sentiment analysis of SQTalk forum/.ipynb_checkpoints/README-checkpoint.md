@@ -1,4 +1,4 @@
-# Project 3: Multiclass Classification of SIA Enquiries
+# Project Title: Multiclass Classification of SIA Enquiries
 Author: Edmond Ang
 
 ## 1. Problem Statement
@@ -27,7 +27,7 @@ SIA's top 2 most-frequently-asked topics and others:
 A predictive model with good performance was successfully developed for SIA. The customer service centre can use the model to sort incoming messages into (1) KF, (2) LCA, and (3) other categories automatically. The areas of strength for KF and LCA were also identified through sentiment analysis, where SIA can then incorporate into their marketing campaigns. SIA was also advised to continuously monitor the model's performance, and to conduct model re-training when the ROC AUC and f1 scores dip to 0.8 and 0.7 respectively to maintain good predictive performance.
 
 1. Findings:
-    - The TFIDF-vectorised SVM model performed the best in both weight-average ROC AUC (0.925) and f1-scores (0.815) across all the above models
+    - The TFIDF-vectorised SVM model performed the best in both macro-average ROC AUC (0.925) and f1-scores (0.815) across all the above models
     - The sentiments of comments containing the top 3 words from KrisFlyer and PPS Club, and LCA are largely positive. Hence, the top 3 words can be deemed as areas of strength for the respective topic (i.e. areas where people are satisfied with)
         - The top 3 words for KrisFlyer and PPS Club are 'miles', 'PPS', 'KF'
         - The top 3 words for LCA are 'lounge', 'SQ', 'served'

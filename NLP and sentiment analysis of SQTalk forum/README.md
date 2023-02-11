@@ -1,4 +1,4 @@
-# Project 3: Multiclass Classification of SIA Enquiries
+# Project Title: Multiclass Classification of SIA Enquiries
 Author: Edmond Ang
 
 ## 1. Problem Statement
