@@ -1,16 +1,16 @@
 ## Project Title: Identifying ID Submissions using Computer Vision
 #### Improving the customer experience in applying for a new digital bank account
 
-\*For a more detailed read, please view the PDF under the presentation folder.\*
+\*For a more detailed read, please view the PDF under the presentation folder\*
 
 ---
 ### 1. Introduction
 ---
 #### Problem Statement: 
-Scenario: A digital bank in Singapore wants to expand its banking business into Indonesia, but faced the challenge of Indonesia not having digital national ID cards. The bank wants to avoid manual ID verification for account opening, because it leads to a poor customer experience.
+A digital bank in Singapore wants to expand its banking business into Indonesia, but faced the challenge of Indonesia not having digital national ID cards. The bank wants to avoid manual ID verification for account opening, because it leads to a poor customer experience.
 - Opportunities:
     - Large underserved market: Indonesia is the 4th most populous nation, and has the 3rd largest unbanked population
-    - Young, tech-savvy population: the median age in Indonesia is median age is 30 years, and its population has the 2nd highest interest level in digital financial services in Southeast Asia\
+    - Young, tech-savvy population: the median age in Indonesia is median age is 30 years, and its population has the 2nd highest interest level in digital financial services in Southeast Asia
 - Challenge:
     - No national digital ID: for bank account opening, laborious and time consuming ID verification must be done with digital submission of physical documents (i.e. photos)
 
@@ -36,7 +36,7 @@ A total of 1,000 photos from East Europe and North-West Asia were used:
     - 100 digitally generated photos of ID cards from Albania
     - 100 digitally generated photos of passports from Azerbaijan
 
-Through scatterplot of boundary box centres, histrogram of boundary box area and aspect ratios, it was found that:
+Through scatterplot of bounding box centres, histrogram of bounding box area and aspect ratios, it was found that:
 1. Objects are usually in centre of photo, and missing from the corners of photos --> models trained on this dataset may be weak in identifying objects in photo corners
 2. No objects are near the full 640 * 640 pixel size --> models trained on this dataset may be weak in identifying close-up objects
 3. Most objects hover around their original aspect ratios --> models trained on this dataset may be weak in identifying rotated passports
@@ -47,7 +47,7 @@ EDA takeaway: data augmentation should be explored for training dataset to incre
 ### 3. Modelling & Deployment
 ---
 #### Modelling: 
-The below models were trained and tested: 
+The following models were trained and tested: 
 
 |                                         |    <br>Baseline Model                                                                                      |    <br>Improved Model 1                                                                       |    <br>Improved Model 2                                                                                          |    <br>Improved   Model 3<br>\*Best performance\*                                               |
 |-----------------------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
