@@ -6,5 +6,5 @@ I created a Tableau dashboard to visualise how Singapore residents chose to trav
 Source:
 [General Household Survey 2015, Department of Statistics Singapore](https://www.singstat.gov.sg/publications/ghs/ghs2015)
 
-![Tableau screenshot 1](Snip1.png)
-![Tableau screenshot 2](Snip2.png)
+![Tableau screenshot 1](ss1.png)
+![Tableau screenshot 2](ss2.png)
