@@ -65,6 +65,9 @@ The best model was deployed at [Streamlit](https://id-card-passport-detection.st
 ---
 As tasked by the bank, an object detection model was successfully developed with a test accuracy of 96% for ID cards and 100% for passports. The streamlit deployment also achieved a classification speed of ~3 seconds for each photo submission.
 
+![Streamlit screenshot 1](ss1.png)
+![Streamlit screenshot 2](ss2.png)
+
 #### Limitations
 - Dataset used is too small even for transfer learning, likely leading to poor generalisation
 - Possibly limited performance on Southeast Asian ID documents (due to nature of dataset)
