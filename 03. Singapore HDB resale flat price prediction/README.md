@@ -1,5 +1,4 @@
 # Project Title: Prediction of HDB Resale Flat Prices
-Author: Edmond Ang
 
 ## Problem Statement
 
@@ -23,7 +22,7 @@ The objective was achieved: a RidgeCV model of $R^{2}$ score of 0.9 was develope
 
 1. Findings:
     * The RidgeCV model used on full hdb_train_df gave the best model result
-<br>
+    
 2. Areas for future improvement:
     * The dataset can be improved by adding several other factors that are intuitively impactful to HDB resale flat prices, such as:
         * Demand and supply data (e.g. number of unsold HDB resale flats (representing supply), number of HDB resale transactions per time period (representing demand))
